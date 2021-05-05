@@ -1,0 +1,34 @@
+.materialContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 40px auto;
+    padding: 15px;
+    .textsContainer {
+        display: flex;
+        border: 1px solid var(--dark-blue);
+        border-radius: 10px;
+        max-width: 650px;
+        margin: 25px auto;
+        img {
+            width: 125px;
+            height: 170px;
+        }
+        div {
+            padding: 0 10px;
+            text-align: right;
+            p {
+                margin: 10px 0;
+            }
+            Button {
+                max-width: 100px;
+            }
+        }
+    }
+}
+
+@media (max-width: 959px) {
+    .materialContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

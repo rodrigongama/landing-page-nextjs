@@ -32,27 +32,27 @@ export default function Header() {
           items={[
             {
               title: 'Curso Completo CFO/21',
-              to: '/about',
+              to: '/material',
             },
             {
               title: 'Direito Constitucional',
-              to: '/about',
+              to: '/material',
             },
             {
               title: 'Direito Administrativo',
-              to: '/about',
+              to: '/material',
             },
             {
               title: 'Direito Penal',
-              to: '/about',
+              to: '/material',
             },
             {
               title: 'Direito Penal Militar',
-              to: '/about',
+              to: '/material',
             },
             {
               title: 'Direitos Humanos',
-              to: '/about',
+              to: '/material',
             },
           ]}
         />

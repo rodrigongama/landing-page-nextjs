@@ -6,6 +6,7 @@ import {
   ButtonNext,
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import Button from '../Button';
 
 import styles from './styles.module.scss';
 
@@ -27,23 +28,22 @@ export default function CarouselHome() {
           <h3>Módulo Direito Penal</h3>
           <p>300 páginas</p>
           <p>R$39,00</p>
-          <a href="https://pag.ae/7WEBxVhew">
-            <button type="button">Comprar</button>
-          </a>
+          <a href="https://pag.ae/7WEBxVhew"></a>
+          <Button title="Comprar" />
         </Slide>
         <Slide className={styles.cards} index={1}>
           <img src="" alt="" />
           <h3>Módulo Direito Administrativo</h3>
           <p>300 páginas</p>
           <p>R$39,00</p>
-          <button type="button">Comprar</button>
+          <Button title="Comprar" />
         </Slide>
         <Slide className={styles.cards} index={2}>
           <img src="" alt="" />
           <h3>Módulo Direito Penal Militar</h3>
           <p>300 páginas</p>
           <p>R$39,00</p>
-          <button type="button">Comprar</button>
+          <Button title="Comprar" />
         </Slide>
         <Slide className={styles.cards} index={3}>
           <img src="" alt="" />
@@ -51,28 +51,28 @@ export default function CarouselHome() {
           <p>6 apostilas</p>
           <p>300 páginas</p>
           <p>R$239,90</p>
-          <button type="button">Comprar</button>
+          <Button title="Comprar" />
         </Slide>
         <Slide className={styles.cards} index={4}>
           <img src="" alt="" />
           <h3>Módulo Direito Constitucional</h3>
           <p>300 páginas</p>
           <p>R$39,00</p>
-          <button type="button">Comprar</button>
+          <Button title="Comprar" />
         </Slide>
         <Slide className={styles.cards} index={5}>
           <img src="" alt="" />
           <h3>Módulo Direito Humanos</h3>
           <p>300 páginas</p>
           <p>R$39,00</p>
-          <button type="button">Comprar</button>
+          <Button title="Comprar" />
         </Slide>
         <Slide className={styles.cards} index={6}>
           <img src="" alt="" />
           <h3>Módulo Direito Processual Penal</h3>
           <p>300 páginas</p>
           <p>R$39,00</p>
-          <button type="button">Comprar</button>
+          <Button title="Comprar" />
         </Slide>
       </Slider>
 

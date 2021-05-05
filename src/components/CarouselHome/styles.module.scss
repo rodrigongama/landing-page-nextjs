@@ -9,14 +9,7 @@
         text-align: center;
         border-radius: 16px;
     }
-    button {
-        width: 70%;
-        padding: 8px;
-        background: var(--dark-blue);
-        color: var(--white);
-        border: 1px solid var(--dark-blue);
-        border-radius: 8px;
-        transition: 0.6s;
+    Button {
         &:hover {
             opacity: 1;
         }
