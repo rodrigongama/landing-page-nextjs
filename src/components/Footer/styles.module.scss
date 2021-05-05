@@ -1,0 +1,38 @@
+.footerContainer {
+    background: var(--dark-blue);
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        margin-top: 6px;
+    }
+    h2,
+    h3 {
+        color: var(--white);
+    }
+    a {
+        color: var(--white);
+        text-decoration: none;
+        display: block;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 689px) {
+    .footerContainer {
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+            margin-bottom: 30px;
+        }
+    }
+}
