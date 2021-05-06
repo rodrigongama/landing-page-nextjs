@@ -1,9 +1,13 @@
+import Head from 'next/head';
 import Button from '../../components/Button';
 import styles from './styles.module.scss';
 
 export default function Material() {
   return (
     <main className={styles.materialContainer}>
+      <Head>
+        <title>JurisMilitar | Materiais</title>
+      </Head>
       <div className={styles.textsContainer}>
         <img src="/template-pdf.png" alt="" />
         <div>

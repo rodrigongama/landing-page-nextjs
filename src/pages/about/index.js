@@ -1,8 +1,12 @@
+import Head from 'next/head';
 import styles from './styles.module.scss';
 
 export default function About() {
   return (
     <>
+      <Head>
+        <title>JurisMilitar | Sobre</title>
+      </Head>
       <section className={styles.about}>
         <img src="/oficial-about.jpg" alt="Oficial da Polícia Militar" />
         <div className={styles.textsAbout}>

@@ -23,7 +23,7 @@ export default function Header() {
         </Link>
 
         <Link href="/news">
-          <button>Notícias</button>
+          <button>Novidades</button>
         </Link>
 
         <Dropdown

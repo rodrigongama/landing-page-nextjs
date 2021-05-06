@@ -39,7 +39,6 @@ class MyDocument extends Document {
             name="keywords"
             content="policia militar, oficial, cfo, bacharel, direito, advogados, concurso publico"
           />
-          <title>JurisMilitar | Home</title>
         </Head>
         <body>
           <Main />

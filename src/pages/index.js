@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import CarouselHome from '../components/CarouselHome';
 
 import styles from './home.module.scss';
@@ -5,6 +6,9 @@ import styles from './home.module.scss';
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>JurisMilitar | Home</title>
+      </Head>
       <section className={styles.principalPhoto}>
         <div className={styles.overlay}>
           <CarouselHome />
@@ -21,7 +25,7 @@ export default function Home() {
         </div>
 
         <div>
-          <h3>Estude com quem já está la dentro!</h3>
+          <h3>Estude com quem já está lá dentro!</h3>
           <img src="/oficial-home.jpg" alt="Pessoas estudando" />
         </div>
       </section>
