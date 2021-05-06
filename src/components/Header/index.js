@@ -1,8 +1,11 @@
 import styles from './styles.module.scss';
-import Dropdown from '../Dropdown';
+
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Header() {
+  const [openMenu, setOpenMenu] = useState(false);
+
   return (
     <header className={styles.headerContainer}>
       <Link href="/">
@@ -16,46 +19,36 @@ export default function Header() {
           <img src="/jurismilitar.jpg" alt="JurisMilitar" />
         </div>
       </Link>
+      <div
+        className={!openMenu ? styles.menuIcon : styles.closeIcon}
+        onClick={() => (!openMenu ? setOpenMenu(true) : setOpenMenu(false))}
+      >
+        <div className={styles.line1}></div>
+        <div className={styles.line2}></div>
+        <div className={styles.line3}></div>
+      </div>
 
-      <div className={styles.buttonsNavigation}>
-        <Link href="/about">
-          <button>Quem Somos</button>
-        </Link>
+      {openMenu && (
+        <div className={styles.sideMenu}>
+          <h2>Juris Militar</h2>
+          <a href="/about">Quem Somos</a>
+          <a href="/news">Novidades</a>
+          <a href="/material">Adquira nosso curso</a>
+        </div>
+      )}
 
-        <Link href="/news">
-          <button>Novidades</button>
-        </Link>
-
-        <Dropdown
-          className={styles.dropdown}
-          title="Adquira nosso curso"
-          items={[
-            {
-              title: 'Curso Completo CFO/21',
-              to: '/material',
-            },
-            {
-              title: 'Direito Constitucional',
-              to: '/material',
-            },
-            {
-              title: 'Direito Administrativo',
-              to: '/material',
-            },
-            {
-              title: 'Direito Penal',
-              to: '/material',
-            },
-            {
-              title: 'Direito Penal Militar',
-              to: '/material',
-            },
-            {
-              title: 'Direitos Humanos',
-              to: '/material',
-            },
-          ]}
-        />
+      <div>
+        <ul className={styles.menu}>
+          <li>
+            <Link href="/about">Quem Somos</Link>
+          </li>
+          <li>
+            <Link href="/news">Novidades</Link>
+          </li>
+          <li>
+            <Link href="/material">Adquira nosso curso</Link>
+          </li>
+        </ul>
       </div>
     </header>
   );

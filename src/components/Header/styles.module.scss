@@ -6,6 +6,8 @@
     align-items: center;
     margin: 0 auto;
     background-color: var(--white);
+    position: fixed;
+    z-index: 3;
     .logo {
         display: flex;
         align-items: center;
@@ -20,35 +22,85 @@
             margin-left: 5px;
         }
     }
-    .buttonsNavigation {
-        display: flex;
-        justify-content: space-between;
-        button {
-            background: transparent;
-            border: none;
-            outline: none;
-            padding: 10px;
-            color: #808080;
-            text-transform: uppercase;
-            &:last-child {
-                font: 700 1rem 'Open Sans', sans-serif;
-                letter-spacing: normal;
-                line-height: normal;
+    ul {
+        list-style: none;
+        overflow: hidden;
+        li {
+            display: inline-block;
+            a {
+                padding: 10px;
+                text-transform: uppercase;
+                color: #808080;
+                text-decoration: none;
+                &:hover {
+                    color: #959595;
+                }
             }
+        }
+    }
+    .sideMenu {
+        position: absolute;
+        top: 99%;
+        width: 100%;
+        height: 170px;
+        background-color: var(--white);
+        text-align: center;
+        h2 {
+            padding: 15px 0;
+        }
+        a {
+            display: block;
+            padding-bottom: 12px;
+            color: var(--gray-200);
+            text-decoration: none;
             &:hover {
-                color: var(--gray-800);
+                opacity: 0.7;
             }
+        }
+    }
+    .closeIcon {
+        width: 22px;
+        height: 30px;
+        cursor: pointer;
+        .line1,
+        .line2,
+        .line3 {
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            margin-top: 4px;
+        }
+        .line1 {
+            transform: rotate(45deg) translate(-1px, 7px);
+            transition: all 0.2s ease-out;
+        }
+        .line2 {
+            display: none;
+        }
+        .line3 {
+            transform: rotate(-45deg) translate(-3px, -6px);
+            transition: all 0.2s ease-out;
         }
     }
 }
 
 @media (max-width: 768px) {
     .headerContainer {
-        .buttonsNavigation {
-            button {
-                &:last-child {
-                    display: none;
-                }
+        ul {
+            display: none;
+        }
+        .menuIcon {
+            width: 22px;
+            height: 30px;
+            cursor: pointer;
+            .line1,
+            .line2,
+            .line3 {
+                width: 100%;
+                height: 2px;
+                background-color: black;
+                margin-top: 4px;
+                transition: all 0.2s ease-out;
             }
         }
     }

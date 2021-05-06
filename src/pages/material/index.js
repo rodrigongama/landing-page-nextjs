@@ -8,6 +8,7 @@ export default function Material() {
       <Head>
         <title>JurisMilitar | Materiais</title>
       </Head>
+
       <div className={styles.textsContainer}>
         <img src="/template-pdf.png" alt="" />
         <div>

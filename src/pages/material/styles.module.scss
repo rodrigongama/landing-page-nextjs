@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    margin: 40px auto;
+    margin: 0 auto 150px;
     padding: 15px;
     .textsContainer {
         display: flex;
@@ -10,6 +10,12 @@
         border-radius: 10px;
         max-width: 650px;
         margin: 25px auto;
+        &:first-of-type {
+            margin-top: 150px;
+        }
+        &:nth-child(2) {
+            margin-top: 150px;
+        }
         img {
             width: 125px;
             height: 170px;
@@ -30,5 +36,10 @@
 @media (max-width: 959px) {
     .materialContainer {
         grid-template-columns: repeat(1, 1fr);
+        .textsContainer {
+            &:nth-child(2) {
+                margin-top: 25px;
+            }
+        }
     }
 }
