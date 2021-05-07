@@ -33,7 +33,7 @@ export default function Header() {
           <h2>Juris Militar</h2>
           <a href="/about">Quem Somos</a>
           <a href="/news">Novidades</a>
-          <a href="/material">Adquira nosso curso</a>
+          <a href="/material">Conheça nosso curso</a>
         </div>
       )}
 
@@ -46,7 +46,7 @@ export default function Header() {
             <Link href="/news">Novidades</Link>
           </li>
           <li>
-            <Link href="/material">Adquira nosso curso</Link>
+            <Link href="/material">Conheça nosso curso</Link>
           </li>
         </ul>
       </div>

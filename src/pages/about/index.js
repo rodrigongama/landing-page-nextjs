@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from './styles.module.scss';
+import Modal from '../../components/Modal/Modal';
 
 export default function About() {
   return (
@@ -39,6 +40,8 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      <Modal />
     </>
   );
 }

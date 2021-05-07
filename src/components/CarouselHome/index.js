@@ -15,7 +15,7 @@ export default function CarouselHome() {
     <CarouselProvider
       naturalSlideWidth={150}
       naturalSlideHeight={100}
-      totalSlides={9}
+      totalSlides={8}
       visibleSlides={2}
       currentSlide={1}
       interval={3000}
@@ -24,54 +24,41 @@ export default function CarouselHome() {
     >
       <Slider>
         <Slide className={styles.cards} index={0}>
-          <img src="" alt="" />
           <h3>Módulo Direito Penal</h3>
-          <p>300 páginas</p>
-          <p>R$39,00</p>
-          <a href="https://pag.ae/7WEBxVhew"></a>
+
           <Button title="Comprar" />
         </Slide>
         <Slide className={styles.cards} index={1}>
-          <img src="" alt="" />
           <h3>Módulo Direito Administrativo</h3>
-          <p>300 páginas</p>
-          <p>R$39,00</p>
+
           <Button title="Comprar" />
         </Slide>
         <Slide className={styles.cards} index={2}>
-          <img src="" alt="" />
           <h3>Módulo Direito Penal Militar</h3>
-          <p>300 páginas</p>
-          <p>R$39,00</p>
+
           <Button title="Comprar" />
         </Slide>
         <Slide className={styles.cards} index={3}>
-          <img src="" alt="" />
           <h3>Curso Completo CFO/21</h3>
-          <p>6 apostilas</p>
-          <p>300 páginas</p>
+          <p>6 matérias</p>
+          <p>8 apostilas</p>
+          <p>541 páginas</p>
           <p>R$239,90</p>
           <Button title="Comprar" />
         </Slide>
         <Slide className={styles.cards} index={4}>
-          <img src="" alt="" />
           <h3>Módulo Direito Constitucional</h3>
-          <p>300 páginas</p>
-          <p>R$39,00</p>
+
           <Button title="Comprar" />
         </Slide>
         <Slide className={styles.cards} index={5}>
-          <img src="" alt="" />
           <h3>Módulo Direito Humanos</h3>
-          <p>300 páginas</p>
-          <p>R$39,00</p>
+
           <Button title="Comprar" />
         </Slide>
         <Slide className={styles.cards} index={6}>
-          <img src="" alt="" />
           <h3>Módulo Direito Processual Penal</h3>
-          <p>300 páginas</p>
-          <p>R$39,00</p>
+
           <Button title="Comprar" />
         </Slide>
       </Slider>

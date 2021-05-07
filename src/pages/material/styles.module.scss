@@ -8,7 +8,7 @@
         display: flex;
         border: 1px solid var(--dark-blue);
         border-radius: 10px;
-        max-width: 650px;
+        max-width: 500px;
         margin: 25px auto;
         &:first-of-type {
             margin-top: 150px;
@@ -19,12 +19,16 @@
         img {
             width: 125px;
             height: 170px;
+            padding: 6px;
         }
         div {
             padding: 0 10px;
             text-align: right;
+            h2 {
+                font-size: 20px;
+            }
             p {
-                margin: 10px 0;
+                margin: 5px 0;
             }
             Button {
                 max-width: 100px;
@@ -40,6 +44,14 @@
             &:nth-child(2) {
                 margin-top: 25px;
             }
+        }
+    }
+}
+
+@media (max-width: 459px) {
+    .materialContainer {
+        .textsContainer {
+            min-height: 200px;
         }
     }
 }

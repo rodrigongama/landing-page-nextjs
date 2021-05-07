@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import CarouselHome from '../components/CarouselHome';
-
+import Modal from '../components/Modal/Modal';
 import styles from './home.module.scss';
 
 export default function Home() {
@@ -89,6 +89,8 @@ export default function Home() {
             </p>
           </div>
         </section>
+
+        <Modal />
       </main>
     </>
   );

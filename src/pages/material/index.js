@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Button from '../../components/Button';
+import Modal from '../../components/Modal/Modal';
 import styles from './styles.module.scss';
 
 export default function Material() {
@@ -10,83 +11,74 @@ export default function Material() {
       </Head>
 
       <div className={styles.textsContainer}>
-        <img src="/template-pdf.png" alt="" />
+        <img src="/capa-penal-geral.png" alt="Apostila de Direito Penal" />
         <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            maxime culpa quidem nesciunt? Dicta, soluta. Incidunt, perferendis
-            vitae pariatur quas eos fugiat, numquam ipsa ullam necessitatibus
-            consectetur deserunt delectus quae.
-          </p>
+          <h2>Apostila de Direito Penal</h2>
+          <p>Parte geral, especial e Leis penais Especiais</p>
+          <p>222 páginas</p>
+          <p>R$39,90</p>
 
           <Button title="Comprar" />
         </div>
       </div>
       <div className={styles.textsContainer}>
-        <img src="/template-pdf.png" alt="" />
+        <img src="/capa-dir-adm.png" alt="Apostila de Direito Administrativo" />
         <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            maxime culpa quidem nesciunt? Dicta, soluta. Incidunt, perferendis
-            vitae pariatur quas eos fugiat, numquam ipsa ullam necessitatibus
-            consectetur deserunt delectus quae.
-          </p>
+          <h2>Apostila de Direito Administrativo</h2>
+          <p>63 páginas</p>
+          <p>R$39,90</p>
 
           <Button title="Comprar" />
         </div>
       </div>
       <div className={styles.textsContainer}>
-        <img src="/template-pdf.png" alt="" />
+        <img src="/capa-dir-const.png" alt="Apostila Direito Constitucional" />
         <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            maxime culpa quidem nesciunt? Dicta, soluta. Incidunt, perferendis
-            vitae pariatur quas eos fugiat, numquam ipsa ullam necessitatibus
-            consectetur deserunt delectus quae.
-          </p>
+          <h2>Apostila Direito Constitucional</h2>
+          <p>100 páginas</p>
+          <p>R$39,90</p>
 
           <Button title="Comprar" />
         </div>
       </div>
       <div className={styles.textsContainer}>
-        <img src="/template-pdf.png" alt="" />
+        <img
+          src="/capa-dir-penal-militar.png"
+          alt="Apostila de Direito Penal Militar"
+        />
         <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            maxime culpa quidem nesciunt? Dicta, soluta. Incidunt, perferendis
-            vitae pariatur quas eos fugiat, numquam ipsa ullam necessitatibus
-            consectetur deserunt delectus quae.
-          </p>
+          <h2>Apostila de Direito Penal Militar</h2>
+          <p>22 páginas</p>
+          <p>R$34,90</p>
 
           <Button title="Comprar" />
         </div>
       </div>
       <div className={styles.textsContainer}>
-        <img src="/template-pdf.png" alt="" />
+        <img src="/capa-dir-humanos.png" alt="Apostila Direitos Humanos" />
         <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            maxime culpa quidem nesciunt? Dicta, soluta. Incidunt, perferendis
-            vitae pariatur quas eos fugiat, numquam ipsa ullam necessitatibus
-            consectetur deserunt delectus quae.
-          </p>
+          <h2>Apostila Direitos Humanos</h2>
+          <p>34 páginas</p>
+          <p>R$34,90</p>
 
           <Button title="Comprar" />
         </div>
       </div>
       <div className={styles.textsContainer}>
-        <img src="/template-pdf.png" alt="" />
+        <img
+          src="/capa-processo-penal.png"
+          alt="Apostila Direito Processual Penal"
+        />
         <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            maxime culpa quidem nesciunt? Dicta, soluta. Incidunt, perferendis
-            vitae pariatur quas eos fugiat, numquam ipsa ullam necessitatibus
-            consectetur deserunt delectus quae.
-          </p>
+          <h2>Apostila Direito Processual Penal</h2>
+          <p>100 páginas</p>
+          <p>R$39,90</p>
 
           <Button title="Comprar" />
         </div>
       </div>
+
+      <Modal />
     </main>
   );
 }

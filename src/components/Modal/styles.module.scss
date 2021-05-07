@@ -1,0 +1,38 @@
+.modalMessage {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 250px;
+    background-color: var(--gray-50);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    .buttonModal {
+        background: none;
+        outline: none;
+        border: none;
+        position: absolute;
+        right: 0%;
+        .buttonFirst,
+        .buttonSecond {
+            width: 22px;
+            height: 2px;
+            background-color: var(--dark-blue);
+            margin-top: 4px;
+        }
+        .buttonFirst {
+            transform: rotate(45deg) translate(0px, 7px);
+        }
+        .buttonSecond {
+            transform: rotate(-45deg) translate(-3px, -5px);
+        }
+    }
+    h3 {
+        color: var(--dark-blue);
+        padding: 20px 0;
+    }
+    p {
+        padding-bottom: 15px;
+    }
+}

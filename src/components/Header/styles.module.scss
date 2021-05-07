@@ -2,9 +2,9 @@
     width: 100%;
     height: 85px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    padding: 0 30px;
     background-color: var(--white);
     position: fixed;
     z-index: 3;
@@ -41,7 +41,8 @@
     .sideMenu {
         position: absolute;
         top: 99%;
-        width: 100%;
+        left: 0;
+        right: 0;
         height: 170px;
         background-color: var(--white);
         text-align: center;
@@ -62,6 +63,8 @@
         width: 22px;
         height: 30px;
         cursor: pointer;
+        position: absolute;
+        right: 8%;
         .line1,
         .line2,
         .line3 {
@@ -93,6 +96,8 @@
             width: 22px;
             height: 30px;
             cursor: pointer;
+            position: absolute;
+            right: 8%;
             .line1,
             .line2,
             .line3 {
