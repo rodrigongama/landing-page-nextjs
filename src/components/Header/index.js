@@ -46,7 +46,7 @@ export default function Header() {
             <Link href="/news">Novidades</Link>
           </li>
           <li>
-            <Link href="/material">Conheça nosso curso</Link>
+            <a href="/material">Conheça nosso curso</a>
           </li>
         </ul>
       </div>

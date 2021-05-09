@@ -1,13 +1,15 @@
-import { createContext, useState, useContext } from 'react';
+import { createContext, useState, useEffect, useContext } from 'react';
 
 const ModalContext = createContext();
 
 export default function ModalProvider({ children }) {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
-  const modal = setTimeout(() => {
-    setIsModalVisible(true);
-  }, 6000);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsModalVisible(true);
+    }, 6000);
+  }, []);
 
   return (
     <ModalContext.Provider
