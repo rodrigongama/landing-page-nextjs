@@ -1,5 +1,5 @@
 .carouselCards {
-    max-width: 940px;
+    max-width: 960px;
     margin: 0 auto;
     height: 600px;
     .cards {
@@ -9,6 +9,7 @@
         text-align: center;
         border-radius: 16px;
         max-width: 280px;
+        min-width: 160px;
         h3 {
             padding: 15px;
         }
@@ -36,7 +37,7 @@
 @media (max-width: 689px) {
     .carouselCards {
         .cards {
-            margin: 170px 5px;
+            margin: 200px 5px;
         }
     }
 }

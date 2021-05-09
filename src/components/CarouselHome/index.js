@@ -17,9 +17,7 @@ export default function CarouselHome() {
       naturalSlideHeight={100}
       totalSlides={8}
       visibleSlides={2}
-      currentSlide={1}
       interval={3000}
-      infinite={true}
       className={styles.carouselCards}
     >
       <Slider>
