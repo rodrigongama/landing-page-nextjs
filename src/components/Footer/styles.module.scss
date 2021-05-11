@@ -1,6 +1,6 @@
 .footerContainer {
     background: var(--dark-blue);
-    height: 300px;
+    height: 220px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -9,8 +9,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
-        margin-top: 6px;
+        font-size: 13px;
+        margin-top: 15px;
     }
     h2,
     h3 {
@@ -32,6 +32,9 @@
     .footerContainer {
         flex-direction: column;
         justify-content: center;
+        .icons {
+            margin-top: auto;
+        }
         h2 {
             margin-bottom: 30px;
         }
