@@ -13,8 +13,8 @@ export default function Material() {
       <div className={styles.textsContainer}>
         <img src="/capa-penal-geral.png" alt="Apostila de Direito Penal" />
         <div>
-          <h2>Apostila de Direito Penal</h2>
-          <p>Parte geral, especial e Leis penais Especiais</p>
+          <h2>Apostila Direito Penal</h2>
+          <p>Parte geral, Especial e Leis Especiais</p>
           <p>222 páginas</p>
           <p>R$39,90</p>
 
@@ -22,10 +22,37 @@ export default function Material() {
         </div>
       </div>
       <div className={styles.textsContainer}>
-        <img src="/capa-dir-adm.png" alt="Apostila de Direito Administrativo" />
+        <img
+          src="/capa-dir-penal-militar.png"
+          alt="Apostila de Direito Penal Militar"
+        />
         <div>
-          <h2>Apostila de Direito Administrativo</h2>
-          <p>63 páginas</p>
+          <h2>Apostila Direito Penal Militar</h2>
+          <p>22 páginas</p>
+          <p>R$34,90</p>
+
+          <Button title="Comprar" />
+        </div>
+      </div>
+      <div className={styles.textsContainer}>
+        <img src="/capa-dir-humanos.png" alt="Apostila Direitos Humanos" />
+        <div>
+          <h2>Apostila de Direitos Humanos</h2>
+          <p>34 páginas</p>
+          <p>R$34,90</p>
+
+          <Button title="Comprar" />
+        </div>
+      </div>
+
+      <div className={styles.textsContainer}>
+        <img
+          src="/capa-processo-penal.png"
+          alt="Apostila Direito Processual Penal"
+        />
+        <div>
+          <h2>Apostila Direito Process. Penal</h2>
+          <p>100 páginas</p>
           <p>R$39,90</p>
 
           <Button title="Comprar" />
@@ -41,37 +68,12 @@ export default function Material() {
           <Button title="Comprar" />
         </div>
       </div>
-      <div className={styles.textsContainer}>
-        <img
-          src="/capa-dir-penal-militar.png"
-          alt="Apostila de Direito Penal Militar"
-        />
-        <div>
-          <h2>Apostila de Direito Penal Militar</h2>
-          <p>22 páginas</p>
-          <p>R$34,90</p>
 
-          <Button title="Comprar" />
-        </div>
-      </div>
       <div className={styles.textsContainer}>
-        <img src="/capa-dir-humanos.png" alt="Apostila Direitos Humanos" />
+        <img src="/capa-dir-adm.png" alt="Apostila de Direito Administrativo" />
         <div>
-          <h2>Apostila Direitos Humanos</h2>
-          <p>34 páginas</p>
-          <p>R$34,90</p>
-
-          <Button title="Comprar" />
-        </div>
-      </div>
-      <div className={styles.textsContainer}>
-        <img
-          src="/capa-processo-penal.png"
-          alt="Apostila Direito Processual Penal"
-        />
-        <div>
-          <h2>Apostila Direito Processual Penal</h2>
-          <p>100 páginas</p>
+          <h2>Apostila Direito Administrativo</h2>
+          <p>63 páginas</p>
           <p>R$39,90</p>
 
           <Button title="Comprar" />

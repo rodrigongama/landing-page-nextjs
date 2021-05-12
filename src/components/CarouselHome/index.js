@@ -22,40 +22,39 @@ export default function CarouselHome() {
     >
       <Slider>
         <Slide className={styles.cards} index={0}>
-          <h3>Módulo Direito Penal</h3>
+          <h3>Apostila Direito Penal</h3>
 
           <Button title="Comprar" />
         </Slide>
         <Slide className={styles.cards} index={1}>
-          <h3>Módulo Direito Administrativo</h3>
+          <h3>Curso Completo CFO/21</h3>
 
           <Button title="Comprar" />
         </Slide>
         <Slide className={styles.cards} index={2}>
-          <h3>Módulo Direito Penal Militar</h3>
+          <h3>Apostila Penal Militar</h3>
 
           <Button title="Comprar" />
         </Slide>
         <Slide className={styles.cards} index={3}>
-          <h3>Curso Completo CFO/21</h3>
-          <p>6 matérias</p>
-          <p>8 apostilas</p>
-          <p>541 páginas</p>
-          <p>R$239,90</p>
+          <h3>Apostila Direitos Humanos</h3>
+
           <Button title="Comprar" />
         </Slide>
         <Slide className={styles.cards} index={4}>
-          <h3>Módulo Direito Constitucional</h3>
+          <h3>Apostila Direito Administrativo</h3>
 
           <Button title="Comprar" />
         </Slide>
+
         <Slide className={styles.cards} index={5}>
-          <h3>Módulo Direito Humanos</h3>
+          <h3>Apostila Direito Constitucional</h3>
 
           <Button title="Comprar" />
         </Slide>
+
         <Slide className={styles.cards} index={6}>
-          <h3>Módulo Direito Processual Penal</h3>
+          <h3>Apostila Direito Processual Penal</h3>
 
           <Button title="Comprar" />
         </Slide>
